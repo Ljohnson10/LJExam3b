@@ -16,10 +16,10 @@
         <asp:Label ID="lbllang" runat="server" meta:resourceKey="lblLang">
 
         </asp:Label><asp:DropDownList ID="ddLang" runat="server" AutoPostBack="true">
-            <asp:ListItem Value="ar-SA">Arabic</asp:ListItem>
-                <asp:ListItem Value="zh">Chinese</asp:ListItem>
+            <asp:ListItem Value="ar-SA">العربية</asp:ListItem>
+                <asp:ListItem Value="zh">中国</asp:ListItem>
                 <asp:ListItem Value="en-US" Selected="True">English</asp:ListItem>
-                <asp:ListItem Value="es">Spanish</asp:ListItem>
+                <asp:ListItem Value="es">Español</asp:ListItem>
             </asp:DropDownList>
     </header>
         <br/>
