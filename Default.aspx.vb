@@ -19,16 +19,8 @@ Partial Class _Default
 
         Calendar.VisibleDate = Today
         tbName.Focus()
-
-        lblHello.Visible = False
-        lblNameOutput.Visible = False
-        lblGradResponse.Visible = False
-        lblGradOutput.Visible = False
-        lblSalaryResponse.Visible = False
-        lblSalaryOutput.Visible = False
-        lblGithub.Visible = False
-        githubLink.Visible = False
-        btnReset.Visible = False
+        output.Style.Add("display", "none")
+       
 
     End Sub
 
@@ -46,28 +38,13 @@ Partial Class _Default
 
         lblSalaryOutput.Text = "$" & tbSalary.Text
 
-        lblHello.Visible = True
-        lblNameOutput.Visible = True
-        lblGradResponse.Visible = True
-        lblGradOutput.Visible = True
-        lblSalaryResponse.Visible = True
-        lblSalaryOutput.Visible = True
-        lblGithub.Visible = True
-        githubLink.Visible = True
-        btnReset.Visible = True
+        output.Style.Add("display", "block")
+     
+
         lbllang.Visible = False
         ddLang.Visible = False
-
-        lblName.Visible = False
-        tbName.Visible = False
-        lblGender.Visible = False
-        radioFemale.Visible = False
-        radioMale.Visible = False
-        lblGraduate.Visible = False
-        Calendar.Visible = False
-        lblSalary.Visible = False
-        tbSalary.Visible = False
-        btnSubmit.Visible = False
+        input.Style.Add("display", "none")
+       
     End Sub
 
 
@@ -76,27 +53,18 @@ Partial Class _Default
         Calendar.VisibleDate = Today
         tbName.Focus()
 
-        lblHello.Visible = False
-        lblNameOutput.Visible = False
-        lblGradResponse.Visible = False
-        lblGradOutput.Visible = False
-        lblSalaryResponse.Visible = False
-        lblSalaryOutput.Visible = False
-        lblGithub.Visible = False
-        githubLink.Visible = False
-        btnReset.Visible = False
+        output.Style.Add("display", "none")
 
-        lblName.Visible = True
-        tbName.Visible = True
-        lblGender.Visible = True
-        radioFemale.Visible = True
-        radioMale.Visible = True
-        lblGraduate.Visible = True
-        Calendar.Visible = True
-        lblSalary.Visible = True
-        tbSalary.Visible = True
-        btnSubmit.Visible = True
+       
+        input.Style.Add("display", "block")
+
         ddLang.Visible = True
         lbllang.Visible = True
+
+        tbName.Text = String.Empty
+        tbSalary.Text = String.Empty
+        Calendar.VisibleDate = Today
+        tbName.Focus()
+
     End Sub
 End Class

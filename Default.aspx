@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head runat="server" >
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
     <title>Lucas Johnson Exam 3b</title>
 </head>
 <body>
@@ -22,8 +23,9 @@
             </asp:DropDownList>
     </header>
         <br/>
-
-        <asp:Label ID="lblName" runat="server" meta:resourceKey="lblName"></asp:Label><asp:TextBox ID="tbName" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="rfvName" runat="server" meta:resourceKey="rfvName" ControlToValidate="tbName"></asp:RequiredFieldValidator> 
+</div>
+        <div id="input" runat="server">
+        <asp:Label ID="lblName" runat="server" meta:resourceKey="lblName"></asp:Label><asp:TextBox ID="tbName" runat="server"></asp:TextBox><asp:RequiredFieldValidator CssClass="RFV" ID="rfvName" runat="server" meta:resourceKey="rfvName" ControlToValidate="tbName"></asp:RequiredFieldValidator> 
         <br />
         <br />
         <asp:Label ID="lblGender" runat="server" meta:resourceKey="lblGender"></asp:Label>&nbsp; <asp:RadioButton ID="radioMale" runat="server" GroupName="Gender" meta:resourceKey="radioMale" />&nbsp; <asp:RadioButton ID="radioFemale" runat="server" GroupName="Gender" meta:resourceKey="radioFemale" Checked="true"/>
@@ -31,14 +33,14 @@
         <br />
         <asp:Label ID="lblGraduate" runat="server" meta:resourceKey="lblGraduate"></asp:Label> <br />
         <asp:Calendar ID="Calendar" runat="server"></asp:Calendar> <br /><br />
-        <asp:Label ID="lblSalary" runat="server" meta:resourceKey="lblSalary"></asp:Label><asp:TextBox ID="tbSalary" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="rfvSalary" runat="server" meta:resourceKey="rfvSalary" ControlToValidate="tbSalary"></asp:RequiredFieldValidator>
+        <asp:Label ID="lblSalary" runat="server" meta:resourceKey="lblSalary"></asp:Label><asp:TextBox ID="tbSalary" runat="server"></asp:TextBox><asp:RequiredFieldValidator CssClass="RFV" ID="rfvSalary" runat="server" meta:resourceKey="rfvSalary" ControlToValidate="tbSalary"></asp:RequiredFieldValidator>
         <br />
         <br />
         <br />
         <asp:Button ID="btnSubmit" runat="server" meta:resourceKey="btnSubmit" />
 
     </div>
-    <div id="output">
+    <div id="output" runat="server">
         <asp:Label ID="lblHello" runat="server" meta:resourceKey="lblHello"></asp:Label>&nbsp;<asp:Label ID="lblNameOutput" runat="server"></asp:Label><br /> <br />
         <asp:Label ID="lblGradResponse" runat="server" meta:resourceKey="lblGradResponse"></asp:Label>
     &nbsp;<asp:Label ID="lblGradOutput" runat="server"></asp:Label><br /><br />
