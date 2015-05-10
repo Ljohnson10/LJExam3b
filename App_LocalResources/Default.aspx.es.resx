@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btnReset.Text" xml:space="preserve">
+    <value>Reajustar</value>
+  </data>
   <data name="btnSubmit.Text" xml:space="preserve">
     <value>Presentar</value>
   </data>
@@ -152,5 +155,11 @@
   </data>
   <data name="radioMale.Text" xml:space="preserve">
     <value>Masculino</value>
+  </data>
+  <data name="rfvName.ErrorMessage" xml:space="preserve">
+    <value>Por favor ingrese un nombre!</value>
+  </data>
+  <data name="rfvSalary.ErrorMessage" xml:space="preserve">
+    <value>Por favor ingrese el sueldo!</value>
   </data>
 </root>

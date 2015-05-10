@@ -31,7 +31,7 @@
         <br />
         <asp:Label ID="lblGraduate" runat="server" meta:resourceKey="lblGraduate"></asp:Label> <br />
         <asp:Calendar ID="Calendar" runat="server"></asp:Calendar> <br /><br />
-        <asp:Label ID="lblSalary" runat="server" meta:resourceKey="lblSalary"></asp:Label><asp:TextBox ID="tbSalary" runat="server"></asp:TextBox>
+        <asp:Label ID="lblSalary" runat="server" meta:resourceKey="lblSalary"></asp:Label><asp:TextBox ID="tbSalary" runat="server"></asp:TextBox><asp:RequiredFieldValidator ID="rfvSalary" runat="server" meta:resourceKey="rfvSalary" ControlToValidate="tbSalary"></asp:RequiredFieldValidator>
         <br />
         <br />
         <br />
@@ -44,7 +44,8 @@
     &nbsp;<asp:Label ID="lblGradOutput" runat="server"></asp:Label><br /><br />
         <asp:Label ID="lblSalaryResponse" runat="server" meta:resourceKey="lblSalaryResponse"></asp:Label>&nbsp;<asp:Label ID="lblSalaryOutput" runat="server"></asp:Label><br /><br />
 
-        <asp:Label ID="lblGithub" runat="server" meta:resourceKey="lblGithub"></asp:Label>&nbsp;<asp:HyperLink ID="githubLink" runat="server" NavigateUrl="https://github.com/ljohnson10">GITHUB</asp:HyperLink>
+        <asp:Label ID="lblGithub" runat="server" meta:resourceKey="lblGithub"></asp:Label>&nbsp;<asp:HyperLink ID="githubLink" runat="server" NavigateUrl="https://github.com/ljohnson10">GITHUB</asp:HyperLink><br /><br />
+        <asp:Button ID="btnReset" runat="server" meta:resourceKey="btnReset"/>
     </div>
          <div id="footer">
         
